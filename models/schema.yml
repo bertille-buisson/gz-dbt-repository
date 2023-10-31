@@ -4,7 +4,6 @@ sources:
   - name: raw
     schema: gz_raw_data
     tables:
-
       - name: product
         identifier: raw_gz_product
 

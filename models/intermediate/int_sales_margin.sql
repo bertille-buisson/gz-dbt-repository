@@ -11,7 +11,7 @@ with sub as (
   on prod.products_id=sal.pdt_id
 )
 select
-round(sum(quantity) * sum(pr_price),2) as Purchase_cost,
+round(sum(quantity) * sum(pr_price),2) as purchase_cost,
 round(sum(revenue) - sum(pr_price),2) as margin
 from sub
 group by quantity,pr_price,revenue,date_date
